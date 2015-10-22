@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F1854CD0-E4D3-46FD-9552-E5E53B80B339</string>
+	<key>IDESourceControlProjectName</key>
+	<string>fieldMobile</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ce766cdd-1651-1042-9a43-b2ff890206b8</key>
+		<string>http://sharkpit.sb.cordblood.net:8080/svn/iPhone-Professional</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>trunk/fieldMobile/fieldMobile.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ce766cdd-1651-1042-9a43-b2ff890206b8</key>
+		<string>../../../../../Futures17</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ce766cdd-1651-1042-9a43-b2ff890206b8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ce766cdd-1651-1042-9a43-b2ff890206b8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Futures17</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ce766cdd-1651-1042-9a43-b2ff890206b8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Futures205</string>
+		</dict>
+	</array>
+</dict>
+</plist>

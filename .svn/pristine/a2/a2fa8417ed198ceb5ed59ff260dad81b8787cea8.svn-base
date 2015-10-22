@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Futures CRP.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Futures DEV-INT copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Futures DEV-INT.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Futures Hotfix.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Futures UAT.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Futures.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6746359619ED855F003CC305</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6746363219ED8704003CC305</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67470C2A1A4282A100D437AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67AED7601976F32C00542DA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67AED7821976F32C00542DA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67C4BD101A3264E000387D19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67DDDBE31976FE5E006AE46B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67E320571976F6ED00057918</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC440ED214E730F00092085D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCA466E715672E3A00999EEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

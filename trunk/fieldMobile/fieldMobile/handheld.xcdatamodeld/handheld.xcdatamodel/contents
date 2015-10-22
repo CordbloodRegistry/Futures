@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Actions" representedClassName="Actions" syncable="YES">
+        <attribute name="actionDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="descriptionType" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="dueDate" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="integrationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nextAction" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nextActionDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="officeId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="rowId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="subType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="actionOffice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Offices" inverseName="officeActions" inverseEntity="Offices" syncable="YES"/>
+        <relationship name="actionProvider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Providers" inverseName="provActions" inverseEntity="Providers" syncable="YES"/>
+        <relationship name="actionTerritory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Territory" inverseName="terrActions" inverseEntity="Territory" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transactions" inverseName="actions" inverseEntity="Transactions" syncable="YES"/>
+    </entity>
+    <entity name="Claims" representedClassName="Claims" syncable="YES">
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="parentLIC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Contacts" representedClassName="Contacts" syncable="YES">
+        <attribute name="continuum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intersectId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kitStockingFlag" optional="YES" attributeType="String" defaultValueString="N" syncable="YES"/>
+        <attribute name="kol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="momentumRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="officeHours" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="officeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rowId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contactOffice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Offices" inverseName="officeContacts" inverseEntity="Offices" syncable="YES"/>
+        <relationship name="contactProvider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Providers" inverseName="provContacts" inverseEntity="Providers" syncable="YES"/>
+        <relationship name="contactTerritory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Territory" inverseName="terrContacts" inverseEntity="Territory" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transactions" inverseName="contacts" inverseEntity="Transactions" syncable="YES"/>
+    </entity>
+    <entity name="Kits" representedClassName="Kits" syncable="YES">
+        <attribute name="assignedContactFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="assignedContactId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="assignedContactLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="assignedOfficeId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="boxNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="depositId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expirationDate" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="kitType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="product" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qualityScore" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rowId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="kitOffice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Offices" inverseName="officeKits" inverseEntity="Offices" syncable="YES"/>
+        <relationship name="kitProviders" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Providers" inverseName="provKits" inverseEntity="Providers" syncable="YES"/>
+        <relationship name="kitTerritory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Territory" inverseName="terrKits" inverseEntity="Territory" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transactions" inverseName="kits" inverseEntity="Transactions" syncable="YES"/>
+    </entity>
+    <entity name="KitsBad" syncable="YES">
+        <attribute name="depositId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Offices" representedClassName="Offices" syncable="YES">
+        <attribute name="addr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addr2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="amountCharged" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="annualBirths" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="autoReceipt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="calls" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="chargesPatient" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="competitor1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="competitor2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="hospAnnualNM75K" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="inactiveReason" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="integrationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kitContactFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kitContactId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kitContactLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kitLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kitStockingEnd" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="kitStockingStart" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="kitThreshold" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="kol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lifetimeNPPBirth" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lowapgarBirth" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mainFax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mainPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="momentumRating" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="mouEndDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mouStartDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="nextFUDate" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numCBCollections" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="numCTCollections" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="numEnrollments" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="officeType" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="percentCashPay" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="percentMedicaid" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="practiceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rowId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stockingOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="territory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="turn" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipcode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="officeActions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Actions" inverseName="actionOffice" inverseEntity="Actions" syncable="YES"/>
+        <relationship name="officeContacts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Contacts" inverseName="contactOffice" inverseEntity="Contacts" syncable="YES"/>
+        <relationship name="officeKits" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Kits" inverseName="kitOffice" inverseEntity="Kits" syncable="YES"/>
+        <relationship name="officeProviders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Providers" inverseName="provOffices" inverseEntity="Providers" syncable="YES"/>
+        <relationship name="officeTerritory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Territory" inverseName="terrOffices" inverseEntity="Territory" syncable="YES"/>
+        <relationship name="orders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Orders" inverseName="office" inverseEntity="Orders" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transactions" inverseName="offices" inverseEntity="Transactions" syncable="YES"/>
+    </entity>
+    <entity name="Opportunities" syncable="YES">
+        <attribute name="dueDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="educatedFlg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="optyProvider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Providers" inverseName="provOpportunities" inverseEntity="Providers" syncable="YES"/>
+        <relationship name="optyTerritory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Territory" inverseName="terrOpportunities" inverseEntity="Territory" syncable="YES"/>
+    </entity>
+    <entity name="Orders" syncable="YES">
+        <attribute name="contactId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="officeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantityRequested" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="rowId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="office" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Offices" inverseName="orders" inverseEntity="Offices" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transactions" inverseName="orders" inverseEntity="Transactions" syncable="YES"/>
+    </entity>
+    <entity name="Practices" representedClassName="Practices" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="practiceType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryOfficeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rowId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="practiceProviders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Providers" inverseName="provPractice" inverseEntity="Providers" syncable="YES"/>
+        <relationship name="practiceTerritory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Territory" inverseName="terrPractices" inverseEntity="Territory" syncable="YES"/>
+    </entity>
+    <entity name="Providers" representedClassName="Providers" syncable="YES">
+        <attribute name="aCDvsTotal" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="avgQualityScore" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="birthYear" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="calls" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="certificationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="credential" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cTCB_Ratio" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="dedicatedEducator" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="educated" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="educated_pct" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="emailPrimary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailSecondary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enrollCountCB" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="enrollCountCT" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="facilityAddr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facilityAddr2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facilityCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facilityFax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facilityId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="facilityIntegrationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facilityName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="facilityPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facilityState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facilityType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facilityZipcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="hpnActiveFlag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hpnQualifiedFlag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hpnSignedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="inactiveReason" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="integrationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="issues" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keyAccountMarker" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kitTrainDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="kitTrainFlag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="labTourAttendee" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastEnrollDt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="momentumRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="monthlyBirth" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="newEnrollments" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nextFUDate" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="noEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noFax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noMail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numCBCollections" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="numCTCollections" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="numEnrollments" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="penetrationRate" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="personUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pfFax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pfOfficeHours" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pfPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pfStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryOfficeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="providerType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pwaActiveFlag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pwaInvitationSent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pwaLastLoginDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="pwaLogin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pwaLoginVerified" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pwaResetPwdFlag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rowId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="salesContinuum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sendPWAInvitation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stockingDoc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total_Enrollments" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalCBStorages" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalCTStorages" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalOpptys" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="turn" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="worksAtStockingHospital" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="provActions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Actions" inverseName="actionProvider" inverseEntity="Actions" syncable="YES"/>
+        <relationship name="provContacts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Contacts" inverseName="contactProvider" inverseEntity="Contacts" syncable="YES"/>
+        <relationship name="provKits" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Kits" inverseName="kitProviders" inverseEntity="Kits" syncable="YES"/>
+        <relationship name="provOffices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Offices" inverseName="officeProviders" inverseEntity="Offices" syncable="YES"/>
+        <relationship name="provOpportunities" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Opportunities" inverseName="optyProvider" inverseEntity="Opportunities" syncable="YES"/>
+        <relationship name="provPractice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Practices" inverseName="practiceProviders" inverseEntity="Practices" syncable="YES"/>
+        <relationship name="provTerritory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Territory" inverseName="terrProviders" inverseEntity="Territory" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transactions" inverseName="providers" inverseEntity="Transactions" syncable="YES"/>
+    </entity>
+    <entity name="Territory" representedClassName="Territory" syncable="YES">
+        <attribute name="territoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="terrActions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Actions" inverseName="actionTerritory" inverseEntity="Actions" syncable="YES"/>
+        <relationship name="terrContacts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Contacts" inverseName="contactTerritory" inverseEntity="Contacts" syncable="YES"/>
+        <relationship name="terrKits" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Kits" inverseName="kitTerritory" inverseEntity="Kits" syncable="YES"/>
+        <relationship name="terrOffices" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Offices" inverseName="officeTerritory" inverseEntity="Offices" syncable="YES"/>
+        <relationship name="terrOpportunities" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Opportunities" inverseName="optyTerritory" inverseEntity="Opportunities" syncable="YES"/>
+        <relationship name="terrPractices" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Practices" inverseName="practiceTerritory" inverseEntity="Practices" syncable="YES"/>
+        <relationship name="terrProviders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Providers" inverseName="provTerritory" inverseEntity="Providers" syncable="YES"/>
+    </entity>
+    <entity name="Transactions" syncable="YES">
+        <attribute name="entityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="entityType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="transactionType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="actions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Actions" inverseName="transactions" inverseEntity="Actions" syncable="YES"/>
+        <relationship name="contacts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contacts" inverseName="transactions" inverseEntity="Contacts" syncable="YES"/>
+        <relationship name="kits" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Kits" inverseName="transactions" inverseEntity="Kits" syncable="YES"/>
+        <relationship name="offices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Offices" inverseName="transactions" inverseEntity="Offices" syncable="YES"/>
+        <relationship name="orders" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Orders" inverseName="transactions" inverseEntity="Orders" syncable="YES"/>
+        <relationship name="providers" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Providers" inverseName="transactions" inverseEntity="Providers" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Actions" positionX="0" positionY="0" width="128" height="360"/>
+        <element name="Claims" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Contacts" positionX="0" positionY="0" width="128" height="300"/>
+        <element name="Kits" positionX="0" positionY="0" width="128" height="285"/>
+        <element name="KitsBad" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="Offices" positionX="0" positionY="0" width="128" height="913"/>
+        <element name="Opportunities" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="Orders" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="Practices" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="Providers" positionX="0" positionY="0" width="128" height="1350"/>
+        <element name="Territory" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="Transactions" positionX="0" positionY="0" width="128" height="240"/>
+    </elements>
+</model>

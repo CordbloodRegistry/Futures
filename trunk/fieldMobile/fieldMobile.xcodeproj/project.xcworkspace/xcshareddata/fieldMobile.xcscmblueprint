@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ce766cdd-1651-1042-9a43-b2ff890206b8+++A7A6CE8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "ce766cdd-1651-1042-9a43-b2ff890206b8+++A7A6CE8" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ce766cdd-1651-1042-9a43-b2ff890206b8+++A7A6CE8" : 0,
+    "ce766cdd-1651-1042-9a43-b2ff890206b8+++587498D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F1854CD0-E4D3-46FD-9552-E5E53B80B339",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ce766cdd-1651-1042-9a43-b2ff890206b8+++A7A6CE8" : "Futures205",
+    "ce766cdd-1651-1042-9a43-b2ff890206b8+++587498D" : "Futures17"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "fieldMobile",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/fieldMobile\/fieldMobile.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/sharkpit.sb.cordblood.net:8080\/svn\/iPhone-Professional",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ce766cdd-1651-1042-9a43-b2ff890206b8+++587498D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/sharkpit.sb.cordblood.net:8080\/svn\/iPhone-Professional",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ce766cdd-1651-1042-9a43-b2ff890206b8+++A7A6CE8"
+    }
+  ]
+}

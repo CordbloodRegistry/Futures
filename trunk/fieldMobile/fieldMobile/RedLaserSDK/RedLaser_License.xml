@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>-NOTICE-</key>
+        <string>THIS FILE IS DIGITALLY SIGNED. DO NOT MODIFY.</string>
+        <key>Company Name</key>
+        <string>Cord Blood Registry</string>
+        <key>iOS</key>
+        <dict>
+            <key>App Bundle IDs</key>
+            <array>
+                <string>cbr.Futures-UAT</string>
+                <string>fieldDevice</string>
+                <string>cbr.fieldMobile</string>
+                <string>fieldMobile</string>
+                <string>Futures</string>
+                <string>cbr.Futures</string>
+            </array>
+        </dict>
+        
+    </dict>
+</plist>
+-----BEGIN SIGNATURE-----
+kSXcQj6whuei0Z4Wqn9bTaekO+zzcpvvExCWmmpkbcUPXf8UAuhfX2iOQ3yM0vqi
+KjD+Vdk9ytcMdfQiVePmnmZ8CzZvLIftrrUdk8tNFZGxCWvg/QXUa8BOeZoxi6lH
+MhYyduKrzToTQ0BhfLY3BsS4yPr2LswV3GqLs8beojHVP7z4tWYE7W6zqrUUJ7g+
+lx7zCArmiA8EkyuteN2qIHXewf4OmTrPKP/l8PZOrivU2u9G1LLIEuvLHL84AOnp
+3t+RcdlOiUHvRf9lE+5anrKzgrq578d6/S/ax/bMAAez8NLHs0KOVQzSx4enmJbe
+pit7Lm19Ui4JfOb51/BZXyKCW4qaWZp2YR3HGcIfBredo+UMpo8qAMRFx8Z7HUs1
+ewbe56CcmualiMw266exwliIO5t9AAIMPYR0xS5HfNdQMYQ+rUZGihSZU6eoXotN
+uFwH8DOIcrj+tjN+2c0jNyQNqwLHSYDvNlAdNzVBvGsVKpbhUY7VpBC3XYeHyH96
+wPSm3aHr0T8pOCsajEdPxFsa3n4IyAvcH17NfsNV82s2REfkNByz0v049kGccIQ3
+gXqJ3sBA8r7ZZF3DwDxTANcLai1bpnf6QZ6Zu50/4n0SAdjXk42R0AaNO74Zk8NU
+ZG09zsdg3oXUq35HR8wvwspEGTmc/Rvqri8WNFK1uio=
+-----END SIGNATURE-----
