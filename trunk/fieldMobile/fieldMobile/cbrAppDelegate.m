@@ -1,4 +1,4 @@
-//  Update from XCODE
+//  Update from GITHUB
 //  cbrAppDelegate.m
 //  fieldDevice
 //
