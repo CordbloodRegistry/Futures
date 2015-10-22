@@ -1,4 +1,4 @@
-//  DELETED
+//  Update from XCODE
 //  cbrAppDelegate.m
 //  fieldDevice
 //
